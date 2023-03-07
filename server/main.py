@@ -58,7 +58,6 @@ async def post_user(request:Request) -> dict:
   cursor = db.cursor()
   cursor.execute("SELECT * FROM members where username='" + username + "' AND pass='" + psw + "';")
   
-
   return {}
 
 # GET /table
